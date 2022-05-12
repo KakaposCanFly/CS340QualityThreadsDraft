@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Quality Threads</h1>
+
+<div class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="customers.html"> Customers</a></li>
+  <li><a href = "distributors.html"> Distributors </a></li>
+  <li><a href = "products.html"> Products </a></li>
+  <li><a href = "sale_orders.html"> Sale Orders </a></li>
+  <li><a href = "sale_order_products.html"> Sale Order Products</a></li>
+</div>
+
+  <h3>Distributors Table</h3>
+  <lable for="filter">Filter Table</lable>
+  <input type="text" id="filter" name="filter" placeholder="Enter an attribute..."><br>
+
+<!-- ################## -->
+<!-- DISTRIBUTORS TABLE -->
+<!-- ################## -->
+  <table>
+  <tr>
+    <th>distributor_name</th>
+    <th>distributor_address</th>
+    <th>distributor_email</th>
+    <th>distributor_phone</th>
+    <th>distributor_contact_person</th>
+  </tr>
+  <tr>
+    <td>Raf's Drip</td>
+    <td>nebraska</td>
+    <td>sweetkicks@evangelizeddd.com</td>
+    <td>5039475829</td>
+    <td>Josh</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>Mike's Shirts</td>
+    <td>washington</td>
+    <td>mikesshirts@quantity.net</td>
+    <td>5039412329</td>
+    <td>Mike</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>Bailey's Rings</td>
+    <td>new york</td>
+    <td>ringmyphone@snazzy.com</td>
+    <td>5039400029</td>
+    <td>Rick</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  </table>
+
+  <!-- Entry field for each entities' attributes -->
+  <h3>Add / Modify Distributors</h3>
+  <form>
+    <input type="text" id="dname" name="dname" placeholder="Distributor Name"><br>
+    <input type="text" id="address" name="address" placeholder="Distributor Address"><br>
+    <input type="text" id="email" name="email" placeholder="Distributor Email"><br>
+    <input type="text" id="dphone" name="dphone" placeholder="Distributor Phone #"><br>
+    <input type="text" id="dcontact" name="dcontact" placeholder="Distributor Contact"><br>
+    <input type="submit" value="Add"><br><br>
+    <input type="text" id="d_id" name="d_id" placeholder="Distributor ID">
+    <br><input type="submit" value="Update">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

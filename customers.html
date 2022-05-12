@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Quality Threads</h1>
+
+<div class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="customers.html"> Customers</a></li>
+  <li><a href = "distributors.html"> Distributors </a></li>
+  <li><a href = "products.html"> Products </a></li>
+  <li><a href = "sale_orders.html"> Sale Orders </a></li>
+  <li><a href = "sale_order_products.html"> Sale Order Products</a></li>
+</div>
+
+  <h3>Customers Table</h3>
+  <lable for="filter">Filter Table</lable>
+  <input type="text" id="filter" name="filter" placeholder="Enter an attribute..."><br>
+
+<!-- ################# -->
+<!--  CUSTOMERS TABLE  -->
+<!-- ################# -->
+  <table>
+  <tr>
+    <th>customer_first_name</th>
+    <th>customer_last_name</th>
+    <th>customer_email</th>
+    <th>customer_phone_number</th>
+    <th>customer_address</th>
+    <th>customer_birthdate</th>
+  </tr>
+  <tr>
+    <td>George</td>
+    <td>Immler</td>
+    <td>immler@massivehats.net</td>
+    <td>5039475829</td>
+    <td>ohio</td>
+    <td>04/26/90</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>June</td>
+    <td>Elizabeth</td>
+    <td>elizabeth@greenthumb.net</td>
+    <td>5039412329</td>
+    <td>portland</td>
+    <td>02/30/87</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>Harold</td>
+    <td>Shwab</td>
+    <td>gigachad@hidethepainharold.gov</td>
+    <td>5039400029</td>
+    <td>ohio</td>
+    <td>04/26/90</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>Rachael</td>
+    <td>Breats</td>
+    <td>breats@iliketoshop.net</td>
+    <td>5034839582</td>
+    <td>new jersey</td>
+    <td>01/19/84</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+</table>
+
+    <!-- Entry field for each entities' attributes -->
+  <h3>Add / Modify Customers</h3>
+  <form>
+    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+    <input type="text" id="cemail" name="cemail" placeholder="Email"><br>
+    <input type="text" id="cphone" name="cphone" placeholder="Phone #"><br>
+    <input type="text" id="caddress" name="caddress" placeholder="Address"><br>
+    <label for="bdate">Birthday:</label>
+    <input type="date" id="bdate" name="bdate" value="2018-07-22"><br>
+    <input type="submit" value="Add"><br><br>
+    <input type="text" id="cid" name="cid" placeholder="Customer ID">
+    <br><input type="submit" value="Update">
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Quality Threads</h1>
+
+<div class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="customers.html"> Customers</a></li>
+  <li><a href = "distributors.html"> Distributors </a></li>
+  <li><a href = "products.html"> Products </a></li>
+  <li><a href = "sale_orders.html"> Sale Orders </a></li>
+  <li><a href = "sale_order_products.html"> Sale Order Products</a></li>
+</div>
+
+  <h3>Products Table</h3>
+  <lable for="filter">Filter Table</lable>
+  <input type="text" id="filter" name="filter" placeholder="Enter an attribute..."><br>
+  
+<!-- ################# -->
+<!--   PRODUCTS TABLE  -->
+<!-- ################# -->
+  
+  <table>
+  <tr>
+    <th>product_type</th>
+    <th>prodcut_name</th>
+    <th>distributor_ID</th>
+    <th>retail_price</th>
+    <th>release_date</th>
+    <th>quant_in_stock</th>
+  </tr>
+  <tr>
+    <td>shoes</td>
+    <td>Raf's_Godly_Kicks</td>
+    <td>02496</td>
+    <td>419.99</td>
+    <td>02/30/22</td>
+    <td>1</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>t-shirt</td>
+    <td>Standard_Long_Sleeve</td>
+    <td>02092</td>
+    <td>11.99</td>
+    <td>02/30/20</td>
+    <td>119</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>hat</td>
+    <td>Magician's_Tophat</td>
+    <td>04446</td>
+    <td>49.99</td>
+    <td>02/12/19</td>
+    <td>7</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+  <tr>
+    <td>poncho</td>
+    <td>Unparalleled_Comfort</td>
+    <td>03002</td>
+    <td>79.99</td>
+    <td>07/08/21</td>
+    <td>22</td>
+    <td><input type="submit" value="delete"></td>
+  </tr>
+</table>
+
+
+  <!-- Entry field for each entities' attributes -->
+  <h3>Add / Modify Products</h3>
+  <form>
+    <input type="text" id="type" name="type" placeholder="Produt type"><br>
+    <input type="text" id="product_name" name="product_name" placeholder="Product name"><br>
+    <input type="text" id="d_id" name="d_id" placeholder="Distributor ID"><br>
+    <input type="text" id="retail_price" name="retail_price" placeholder="Retail Price"><br>
+    <input type="text" id="quant_in_stock" name="quant_in_stock" placeholder="Quantity in Stock"><br>
+    <label for="pdate">Release Date:</label>
+    <input type="date" id="pdate" name="pdate" value="2018-07-22"><br>
+    <input type="submit" value="Add"><br><br>
+    <input type="text" id="pid" name="pid" placeholder="Product ID">
+    <br><input type="submit" value="Update">
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
